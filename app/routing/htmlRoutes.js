@@ -12,6 +12,10 @@ app.get("*", function(req, res){
     res.sendFile(path.join(__dirname, "../public/home.html"));
 })
 
+app.get("/", function(req, res){
+    res.sendFile(path.join(__dirname, "../public/home.html"));
+})
+
 //note - if you only have the index.html then that is the default; don't have to do the app.get
 
 module.exports = app;
