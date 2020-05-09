@@ -1,6 +1,6 @@
 var friendNamesArr = [
     {
-        "name": "Jackie Kay",
+        "name": "Mister Anderson",
         "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
         "scores": [
             5,
@@ -16,7 +16,7 @@ var friendNamesArr = [
         ]
     },
     {
-        "name": "John Doe",
+        "name": "Agent Smith",
         "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
         "scores": [
             5,
@@ -32,7 +32,7 @@ var friendNamesArr = [
         ]
     },
     {
-        "name": "Jane Doe",
+        "name": "Morpheus",
         "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
         "scores": [
             1,
@@ -48,7 +48,23 @@ var friendNamesArr = [
         ]
     },
     {
-        "name": "Sarah Smith",
+        "name": "Trinity",
+        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "scores": [
+            2,
+            1,
+            4,
+            3,
+            5,
+            1,
+            3,
+            5,
+            1,
+            1
+        ]
+    },
+    {
+        "name": "Cypher",
         "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
         "scores": [
             2,
