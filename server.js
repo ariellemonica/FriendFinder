@@ -1,5 +1,5 @@
 const express = require("express");
-const port = process.env.port||8080;
+const port = process.env.PORT||8080;
 //this enables express routing feature
 const app = express();
 //data exchance between FE<=>BE is in json format
