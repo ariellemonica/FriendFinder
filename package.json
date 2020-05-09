@@ -1,5 +1,5 @@
 {
-  "name": "FriendFinder",
+  "name": "friendfinder",
   "version": "1.0.0",
   "description": "FriendFinder",
   "main": "index.js",
@@ -20,5 +20,6 @@
   "homepage": "https://github.com/ariellemonica/FriendFinder#readme",
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "devDependencies": {}
 }
