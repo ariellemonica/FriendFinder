@@ -33,7 +33,10 @@ router.post("/api/friends", function (req, res){
     }
     db.push(req.body);
     console.log("Calculated best match is: ", bestMatch.name);
-    res.json(bestMatch)
+    console.log("Return json for best match: ");
+    res.json(bestMatch);
+    // Originally had:
+    // res.json(bestMatch);
 
 })
 
