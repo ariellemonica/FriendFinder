@@ -194,13 +194,13 @@
                 console.log("This is the full response: ", response);
                 console.log("This is the responseJSON: ", response.responseJSON);
 
-                if (data){
-                    $("#results").text(response.responseJSON.name);
-                }
+                // if (data){
+                //     $("#results").text(response.responseJSON.name);
+                // }
 
-                // $("#bestMatchName").text(data);
-                // $("#bestMatchImg").attr("src", data);
-                // $("#results-modal").modal("toggle");
+                $("#bestMatchName").text(response.responseJSON.name);
+                $("#bestMatchImg").attr("src", response.responseJSON.photo);
+                $("#results-modal").modal("toggle");
 
                 // console.log("This console fires after modal.")
 
