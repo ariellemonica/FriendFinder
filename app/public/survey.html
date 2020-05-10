@@ -193,7 +193,9 @@
                 console.log("This data was sent in post: ", newRecord);
                 console.log("This is the response: ");
 
-                $("#results").text(JSON.stringify(data));
+                if (data){
+                    $("#results").replaceWith($("#results").html(data));
+                }
 
                 // $("#bestMatchName").text(data);
                 // $("#bestMatchImg").attr("src", data);
