@@ -198,7 +198,9 @@
                 //     $("#results").text(response.responseJSON.name);
                 // }
 
-                $("#bestMatchName").text(response.responseJSON.name);
+                var name = response.responseJSON.name;
+
+                $("#bestMatchName").text(name);
                 // $("#bestMatchImg").attr("src", response.responseJSON.photo);
                 $("#results-modal").modal("toggle");
 
