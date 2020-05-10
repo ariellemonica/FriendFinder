@@ -9,10 +9,6 @@ app.use(express.urlencoded({
     extended: true
 }));
 
-// require("./app/routing/apiRoutes.js")(app);
-// require("./app/routing/htmlRoutes.js")(app);
-
-// originally used these: 
 app.use(require("./app/routing/apiRoutes.js"))
 app.use(require("./app/routing/htmlRoutes.js"))
 
