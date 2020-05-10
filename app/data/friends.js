@@ -25,10 +25,10 @@ var friendNamesArr = [
             1,
             1,
             5,
-            5,
-            5,
-            5,
-            5
+            4,
+            3,
+            2,
+            1
         ]
     },
     {
@@ -51,16 +51,16 @@ var friendNamesArr = [
         "name": "Trinity",
         "photo": "https://vignette.wikia.nocookie.net/matrix/images/6/67/Trinityfull.jpg/revision/latest/scale-to-width-down/310?cb=20060803214449",
         "scores": [
+            5,
+            3,
+            4,
             3,
             3,
-            3,
-            3,
-            3,
-            3,
-            3,
-            3,
-            3,
-            3
+            2,
+            2,
+            2,
+            2,
+            1
         ]
     },
     {
@@ -77,22 +77,6 @@ var friendNamesArr = [
             4,
             4,
             3
-        ]
-    },
-    {
-        "name": "Steph Penrose",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-        "scores": [
-            3,
-            3,
-            3,
-            3,
-            3,
-            3,
-            3,
-            3,
-            3,
-            4
         ]
     }
     //add more
