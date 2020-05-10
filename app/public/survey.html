@@ -128,6 +128,31 @@
     </form>
     <button type="button" class="btn btn-dark" id="submitButton">Submit</button>
 
+    <div id="results-modal">
+        <div class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Best Match</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h2 id="bestMatchName"></h2>
+                        <p>Congrats! You've been matched!</p>
+                        <img id="bestMatchImg"
+                            src="https://i.dlpng.com/static/png/6753544_preview.png"
+                            alt="placeholder">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
@@ -141,7 +166,7 @@
     <script type="text/javascript">
         $("#submitButton").on("click", function () {
             console.log("BTN Press")
-            var data = {
+            var newRecord = {
                 name: $("#nameInput").val(),
                 image: $("#imageInput").val(),
                 scores: [
@@ -157,11 +182,16 @@
                     $("#question10").val()
                 ]
             }
-            console.log("Record", data);
+            console.log("Record", newRecord);
 
-            $.post("/api/friends", data, function(err, data){
+            $.post("/api/friends", newRecord, function (err, data) {
                 // if (err) throw err;
                 console.log("This data was sent in post: ", data);
+
+                $("#bestMatchName").text(data.name);
+                $("#bestMatchImg").attr("src", data.photo);
+                $("#results-modal").modal("toggle");
+
             })
 
             // $.ajax({
