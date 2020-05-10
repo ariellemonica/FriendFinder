@@ -135,7 +135,6 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">x</button>
                     <h2 class="modal-title">Best Match</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
@@ -192,17 +191,14 @@
                 console.log("This is the full response: ", response);
                 console.log("This is the responseJSON: ", response.responseJSON);
 
-                // if (data){
-                //     $("#results").text(response.responseJSON.name);
-                // }
 
                 var name = response.responseJSON.name;
+                var photo = response.responseJSON.photo;
 
                 $("#bestMatchName").text(name);
-                // $("#bestMatchImg").attr("src", response.responseJSON.photo);
+                $("#bestMatchImg").attr("src", photo);
                 $("#results-modal").modal("toggle");
 
-                // console.log("This console fires after modal.")
 
             })
 

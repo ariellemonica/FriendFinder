@@ -1,7 +1,7 @@
 var friendNamesArr = [
     {
         "name": "Mister Anderson",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo": "https://vignette.wikia.nocookie.net/matrix/images/3/32/Neo.jpg/revision/latest/top-crop/width/200/height/150?cb=20060715235228",
         "scores": [
             5,
             5,
@@ -17,7 +17,7 @@ var friendNamesArr = [
     },
     {
         "name": "Agent Smith",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo": "https://vignette.wikia.nocookie.net/matrix/images/4/4d/Agent-smith-the-matrix-movie-hd-wallpaper-2880x1800-4710.png/revision/latest/top-crop/width/200/height/150?cb=20140504013834",
         "scores": [
             1,
             1,
@@ -65,7 +65,7 @@ var friendNamesArr = [
     },
     {
         "name": "Cypher",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "photo": "https://vignette.wikia.nocookie.net/matrix/images/b/be/Cypher1.jpg/revision/latest/scale-to-width-down/310?cb=20090501213356",
         "scores": [
             2,
             1,
