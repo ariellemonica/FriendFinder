@@ -188,13 +188,13 @@
             }
             console.log("Record", newRecord);
 
-            $.post("/api/friends", newRecord, function (err, data) {
+            $.post("/api/friends", newRecord, function (err, data, response) {
                 // if (err) throw err;
                 console.log("This data was sent in post: ", newRecord);
                 console.log("This is the response: ");
 
                 if (data){
-                    $("#results").replaceWith($("#results").html(data));
+                    $("#results").replaceWith($("#results").html(response.name));
                 }
 
                 // $("#bestMatchName").text(data);
