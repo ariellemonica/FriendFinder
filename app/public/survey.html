@@ -137,11 +137,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <!-- <script src="../../app.js"></script> -->
+
     <script type="text/javascript">
         $("#submitButton").on("click", function () {
             console.log("BTN Press")
-            var record = {
+            var data = {
                 name: $("#nameInput").val(),
                 image: $("#imageInput").val(),
                 scores: [
@@ -157,16 +157,21 @@
                     $("#question10").val()
                 ]
             }
-            console.log("Record", record);
+            console.log("Record", data);
 
-            $.ajax({
-                method: "POST",
-                URL: "/api/friends",
-                data: record
-            }, function (err, result) {
-                if (err) throw err;
-                console.log(result);
+            $.post("/api/friends", data, function(err, data){
+                // if (err) throw err;
+                console.log("This data was sent in post: ", data);
             })
+
+            // $.ajax({
+            //     method: "POST",
+            //     URL: "/api/friends",
+            //     data: record
+            // }, function (err, result) {
+            //     if (err) throw err;
+            //     console.log(result);
+            // })
         });
     </script>
 </body>

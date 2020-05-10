@@ -12,7 +12,8 @@ router.post("/api/friends", function (req, res){
 
     var totalScore = 0;
     for (let i = 0; i < 10; i++){
-        totalScore+= req.body.scores[i];
+        totalScore+= parseInt(req.body.scores[i]);
+        console.log("Post request triggered calc of total score of new friend: ", totalScore);
     };
 
     var bestScore = 10000;
@@ -31,7 +32,7 @@ router.post("/api/friends", function (req, res){
         }
     }
     db.push(req.body);
-    console.log(bestMatch);
+    console.log("Calculated best match is: ", bestMatch.name);
     res.json(bestMatch)
 
 })

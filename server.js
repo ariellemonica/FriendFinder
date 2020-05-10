@@ -9,12 +9,12 @@ app.use(express.urlencoded({
     extended: true
 }));
 
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+// require("./app/routing/apiRoutes.js")(app);
+// require("./app/routing/htmlRoutes.js")(app);
 
-// originall used these: 
-// app.use(require("./app/routing/apiRoutes.js"))
-// app.use(require("./app/routing/htmlRoutes.js"))
+// originally used these: 
+app.use(require("./app/routing/apiRoutes.js"))
+app.use(require("./app/routing/htmlRoutes.js"))
 
 app.use(express.static("app/public"))
 
