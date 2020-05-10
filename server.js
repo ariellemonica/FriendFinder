@@ -8,8 +8,14 @@ app.use(express.json())
 app.use(express.urlencoded({
     extended: true
 }));
-app.use(require("./app/routing/apiRoutes.js"))
-app.use(require("./app/routing/htmlRoutes.js"))
+
+require("./routes/apiRoutes")(app);
+require("./routes/htmlRoutes")(app);
+
+// originall used these: 
+// app.use(require("./app/routing/apiRoutes.js"))
+// app.use(require("./app/routing/htmlRoutes.js"))
+
 app.use(express.static("app/public"))
 
 
