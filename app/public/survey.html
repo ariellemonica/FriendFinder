@@ -191,9 +191,8 @@
             $.post("/api/friends", newRecord, function (err, data, response) {
                 // if (err) throw err;
                 console.log("This data was sent in post: ", newRecord);
-                console.log("This is the response: ", response);
-                console.log("This is the data: ", data);
-                console.log("This is the res.body: ", res.body);
+                console.log("This is the full response: ", response);
+                console.log("This is the responseJSON: ", response.responseJSON);
 
                 // if (data){
                 //     $("#results").replaceWith($("#results").html(response.name));
